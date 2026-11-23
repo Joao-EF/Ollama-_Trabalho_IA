@@ -1,0 +1,51 @@
+Modelo: qwen2.5-coder:7b
+Temperatura: 0.0
+Top-P: 0.9
+Num_predict: 512
+Seed: 42
+Prompt: Crie uma função em Python que receba uma lista de números inteiros e retorne somente os números que são pares e maiores que 10. Explique a lógica utilizada e demonstre o resultado para a lista [2, 8, 10, 12, 15, 18, 21, 24].
+
+Resposta:
+Aqui está a função em Python que você pediu:
+
+```python
+def pares_maiores_que_10(numeros):
+    pares = []
+    for numero in numeros:
+        if numero % 2 == 0 and numero > 10:
+            pares.append(numero)
+    return pares
+```
+
+A lógica utilizada na função é a seguinte:
+
+1. A função `pares_maiores_que_10` recebe uma lista de números inteiros como argumento.
+
+2. É criada uma lista vazia chamada `pares` que será usada para armazenar os números pares maiores que 10.
+
+3. O código entra em um loop `for` que itera sobre cada número na lista de entrada.
+
+4. Para cada número, é verificado se ele é par (`numero % 2 == 0`) e se ele é maior que 10 (`numero > 10`).
+
+5. Se ambos os critérios forem atendidos, o número é adicionado à lista `pares`.
+
+6. Após o loop terminar, a função retorna a lista `pares`.
+
+Agora, vamos demonstrar o resultado para a lista `[2, 8, 10, 12, 15, 18, 21, 24]`:
+
+```python
+numeros = [2, 8, 10, 12, 15, 18, 21, 24]
+resultado = pares_maiores_que_10(numeros)
+print(resultado)
+```
+
+O resultado será:
+
+```
+[12, 18, 24]
+```
+
+Como você pode ver, a função retornou apenas os números pares maiores que 10 da lista de entrada.
+
+Tokens gerados: 389
+Motivo do fim: stop
